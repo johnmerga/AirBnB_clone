@@ -1,102 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>AirBnB clone</title>
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/8-places.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/4-common.css" />
+    <link rel="stylesheet" href="styles/3-header.css" />
+    <link rel="stylesheet" href="styles/3-footer.css" />
+    <link rel="stylesheet" href="styles/6-filters.css" />
+    <link rel="stylesheet" href="styles/8-places.css" />
+    <link rel="icon" href="images/icon.png" />
   </head>
   <body>
+    <!-- Header -->
+
     <header></header>
     <div class="container">
+      <!-- filter -->
       <section class="filters">
+        <!--locations  -->
         <div class="locations">
           <h3>States</h3>
-          <h4>California, Arizona...</h4>
+          <h4>California, Arizona..</h4>
+
           <ul class="popover">
+            <li>
+              <ul>
+                <li><h2>Arizona</h2></li>
+                <li>page</li>
+                <li>page2</li>
+              </ul>
+            </li>
             <li>
               <ul>
                 <li><h2>California</h2></li>
                 <li>San Francisco</li>
-                <li>Los Angeles</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li><h2>Arizona</h2></li>
-                <li>Phoenix</li>
-                <li>Grand Canyon</li>
+                <li>Los Altos</li>
               </ul>
             </li>
           </ul>
         </div>
+
+        <!--amenities  -->
         <div class="amenities">
           <h3>Amenities</h3>
           <h4>Internet, Kitchen...</h4>
+
           <ul class="popover">
             <li>Internet</li>
-            <li>TV</li>
+            <li>Tv</li>
             <li>Kitchen</li>
-            <li>Games</li>
+            <li>Iron</li>
           </ul>
         </div>
+
+        <!--  -->
         <button>Search</button>
       </section>
+
+      <!-- Places -->
+
       <section class="places">
         <h1>Places</h1>
+
         <article>
           <h2>My home</h2>
-          <div class="price_by_night">$80</div>
+          <div class="price_by_night">
+            <p>$80</p>
+          </div>
+          <!-- info -->
           <div class="information">
-            <div class="max_guest"><h4>2 Guests</h4></div>
-            <div class="number_rooms"><h4>1 Bedroom</h4></div>
-            <div class="number_bathrooms"><h4>1 Bathroom</h4></div>
+            <div class="max_guest">
+              <p>2 Guests</p>
+            </div>
+
+            <div class="number_rooms">
+              <p>1 bedroom</p>
+            </div>
+            <div class="number_bathrooms">
+              <p>1 bathroom</p>
+            </div>
           </div>
+          <!-- user -->
           <div class="user">
-            <h3>Owner:</h3><h4> John Lennon</h4>
+            <p><strong>Owner:</strong> John Merga</p>
           </div>
+
+          <!-- description -->
           <div class="description">
-            <h4>This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people. It locates at the center of Shangai and next to subway line 1. 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.</h4>
+            <p>
+              This is a lovely 1 bedroom and 1 bathroom apartment that can
+              accomodate 2 people. It locates at the center of Shangai and next
+              to subway line 1. 1 stop to People Square, 2 stops to Bund, 3
+              stops to Jingan Temple.
+            </p>
           </div>
         </article>
+        <!-- Place-2 -->
         <article>
           <h2>Tiny house</h2>
-          <div class="price_by_night">$65</div>
+          <div class="price_by_night">
+            <p>$60</p>
+          </div>
+          <!-- info -->
           <div class="information">
-            <div class="max_guest"><h4>4 Guests</h4></div>
-            <div class="number_rooms"><h4>2 Bedrooms</h4></div>
-            <div class="number_bathrooms"><h4>1 Bathroom</h4></div>
+            <div class="max_guest">
+              <p>4 Guests</p>
+            </div>
+
+            <div class="number_rooms">
+              <p>2 bedroom</p>
+            </div>
+            <div class="number_bathrooms">
+              <p>1 bathroom</p>
+            </div>
           </div>
+          <!-- user -->
           <div class="user">
-            <h3>Owner:</h3><h4> Adrienne</h4>
+            <p><strong>Owner:</strong>Naol Girma</p>
           </div>
+
+          <!-- description -->
           <div class="description">
-            <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit sapien, eleifend odio ridiculus sodales egestas sem etiam, quis nostra sociosqu enim luctus commodo in. Eleifend platea purus sapien sociis netus convallis nisi sociosqu sed risus fames rutrum, quam mi nullam proin placerat vitae vehicula laoreet ut hendrerit nascetur. Odio potenti quam elementum leo urna bibendum ante quis platea ad, enim quisque imperdiet congue morbi vitae facilisis netus rhoncus, pharetra proin fusce maecenas velit placerat cum erat cubilia.</h4>
+            <p>
+              This is a lovely 2 bedroom and 1 bathroom apartment that can
+              accomodate 3 people. It locates at the center of Addis Ababa and
+              next to subway line 1. stop to People Square, 2 stops to Bund, 3
+              stops to Mexico Square. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Dolorem aut dolore, alias eius architecto porro
+              harum ut quis a error vero asperiores quidem accusamus est odit
+              pariatur, exercitationem facere! Corporis?
+            </p>
           </div>
         </article>
+
         <article>
           <h2>A suite</h2>
-          <div class="price_by_night">$180</div>
+          <div class="price_by_night">
+            <p>$190</p>
+          </div>
+          <!-- info -->
           <div class="information">
-            <div class="max_guest"><h4>3 Guests</h4></div>
-            <div class="number_rooms"><h4>2 Bedrooms</h4></div>
-            <div class="number_bathrooms"><h4>2 Bathrooms</h4></div>
+            <div class="max_guest">
+              <p>6 Guests</p>
+            </div>
+
+            <div class="number_rooms">
+              <p>4 bedroom</p>
+            </div>
+            <div class="number_bathrooms">
+              <p>3 bathroom</p>
+            </div>
           </div>
+          <!-- user -->
           <div class="user">
-            <h3>Owner:</h3><h4> Luis</h4>
+            <p><strong>Owner:</strong>Helen Melaku</p>
           </div>
+
+          <!-- description -->
           <div class="description">
-            <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit sapien, eleifend odio ridiculus sodales egestas sem etiam, quis nostra sociosqu enim luctus commodo in. Eleifend platea purus sapien sociis netus convallis nisi sociosqu sed risus fames rutrum, quam mi nullam proin placerat vitae vehicula laoreet ut hendrerit nascetur. Odio potenti quam elementum leo urna bibendum ante quis platea ad, enim quisque imperdiet congue morbi vitae facilisis netus rhoncus, pharetra proin fusce maecenas velit placerat cum erat cubilia.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam
+              doloribus officia, modi omnis culpa totam aliquam ipsa sunt, unde,
+              alias asperiores quisquam assumenda. Totam nobis adipisci
+              similique. Quibusdam, explicabo. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Adipisci reprehenderit fugiat
+              dolores? Laboriosam accusantium ipsum cum mollitia, saepe id ipsa
+              commodi et voluptatibus? Repellendus, provident voluptate.
+              Cupiditate natus voluptate nulla.
+            </p>
           </div>
         </article>
       </section>
     </div>
-    <footer>
-      <p>Holberton School</p>
-    </footer>
+    <footer><p>Holberton School</p></footer>
   </body>
 </html>
